@@ -1,0 +1,18 @@
+{
+  "name": "vivify",
+  "version": "1.0.0",
+  "description": "test project",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass assets/styles/scss/main.scss dist/css/main.css -w",
+    "compile:sass": "node-sass assets/styles/scss/main.scss dist/css/main.css",
+    "compress:css": "node-sass dist/css/main.css dist/css/main.css --output-style compressed",
+    "build": "npm-run-all compile:sass compress:css"
+  },
+  "author": "Stefan Djokic",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
